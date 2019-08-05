@@ -12,14 +12,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script>
-        function iniciaJogo(){
+        function iniciarJogo(){
             var nivel = document.getElementById('nivel').value
             if(nivel === ''){
                 alert('Selecione um nível para iniciar o jogo')
                 return false
-            }else{
-
             }
+
+            window.location.href = "index.html?" + nivel
         }
     </script>
 
@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciaJogo()">Iniciar jogo</button>
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar jogo</button>
                 </div>
             </div>
         </div>
